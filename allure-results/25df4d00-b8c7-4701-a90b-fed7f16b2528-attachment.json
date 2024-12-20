@@ -1,0 +1,1 @@
+Test: Get all recent posts, verify the length is >10 and assert the number of posts is 5

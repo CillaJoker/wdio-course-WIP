@@ -1,0 +1,4 @@
+{
+  "script": "browserstack_executor: {\"action\":\"annotate\",\"arguments\":{\"data\":\"Test: Find Header Element & assert text\",\"level\":\"info\"}}",
+  "args": []
+}

@@ -1,0 +1,4 @@
+{
+  "script": "browserstack_executor: {\"action\":\"annotate\",\"arguments\":{\"data\":\"Test: Click Logo Button & assert URL DOES NOT CONTAIN get-started text\",\"level\":\"info\"}}",
+  "args": []
+}

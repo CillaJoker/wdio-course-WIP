@@ -1,0 +1,4 @@
+{
+  "script": "browserstack_executor: {\"action\":\"annotate\",\"arguments\":{\"data\":\"Test: Get all recent posts, verify the length is >10 and assert the number of posts is 5\",\"level\":\"info\"}}",
+  "args": []
+}
