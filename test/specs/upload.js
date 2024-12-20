@@ -8,7 +8,7 @@ describe('Upload Tests', () => {
     //Open URL
         await browser.url('https://the-internet.herokuapp.com/upload')
         //store test file path
-        const filePath = path.join(__dirname, '../data/TestUpload.png')
+        const filePath = path.resolve(__dirname, '../data/TestUpload.png')
         
         //upload file
         const remoteFilePath = await browser.uploadFile(filePath)
