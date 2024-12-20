@@ -1,4 +1,0 @@
-{
-  "script": "browserstack_executor: {\"action\":\"annotate\",\"arguments\":{\"data\":\"Test: Working with iFrames\",\"level\":\"info\"}}",
-  "args": []
-}
