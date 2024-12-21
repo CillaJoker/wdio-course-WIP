@@ -8,10 +8,18 @@ class TargetHomePageSelectors{
     get searchedForText(){
         return $('.h-margin-l-x2')
     }
-    get listOfTrending(){
+    get listOfTrendingSearches(){
         return $$('.sc-bd5d6398-0')
     }
-
+    get listOfTrendingSearchesBTNs(){
+        return $$('.sc-bd5d6398-0 button')
+    }
+    get signInBTN(){
+        return $('.h-margin-r-x3')
+    }
+    get createAccountBTN(){
+        return $ ('.sc-ddc722c0-0.sc-3d5333d1-0.flfJAZ.jaKlHa.h-whiteSpace-normal.h-margin-b-tight')
+    }
     }
     
     

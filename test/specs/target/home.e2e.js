@@ -14,12 +14,17 @@ describe('Target Home Page', () => {
         await TargetHomePage.searchWithTrendingSearch()
     })
 
-    it('Search Random Content and verify text', async () => {
+    it('Search Random Item and verify text', async () => {
         const randomItem = faker.commerce.product()
         await TargetHomePage.openHomePage();
         await TargetHomePage.searchForRandomItem(randomItem)
         await TargetHomePageValidators.verifySearchItem(randomItem);
+    }) 
+    it('Search Random Item and Open registration', async () => {
+        const randomItem = faker.commerce.product()
+        await TargetHomePage.openHomePage();
+        await TargetHomePage.searchForRandomItem(randomItem)
+        await TargetHomePage.openReg()
     })
-
 
 })

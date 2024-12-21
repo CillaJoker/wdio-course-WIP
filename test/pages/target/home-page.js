@@ -14,12 +14,20 @@ class TargetHomePage{
         await TargetHomePageSelectors.searchedForText.waitForDisplayed();
     }
     async searchWithTrendingSearch(){
-        const firstInList = TargetHomePageSelectors.listOfTrending[0]
-        await TargetHomePageSelectors.searchBar.waitForDisplayed;
+        await TargetHomePageSelectors.searchBar.waitForDisplayed();
         await TargetHomePageSelectors.searchBar.click();
+        const firstInList = await TargetHomePageSelectors.listOfTrendingSearches[0]
+        const firstInItem = await TargetHomePageSelectors.listOfTrendingSearchesBTNs[0]
+        const firstInItemValue = await firstInItem.getValue()
         await firstInList.click();
         await TargetHomePageSelectors.searchedForText.waitForDisplayed();
-        await TargetHomePageValidators.verifyFirstTrendingSearchItem(firstInList.getText());
+        await TargetHomePageValidators.verifyFirstTrendingSearchItem(firstInItemValue);
+    }
+    async openReg(){
+        await TargetHomePageSelectors.signInBTN.waitForDisplayed();
+        await TargetHomePageSelectors.signInBTN.click();
+        await TargetHomePageSelectors.createAccountBTN.waitForDisplayed();
+        await TargetHomePageSelectors.createAccountBTN.click();
     }
 }
 

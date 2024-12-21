@@ -7,13 +7,13 @@ class TargetHomePageValidators{
     async verifyTitle(){
         await expect(browser).toHaveTitle(expect.stringContaining('Target : Expect More. Pay Less.'))
     }
-    async verifySearchItem(text){
-        expect(await TargetHomePageSelectors.searchedForText).toHaveText(text)
+    async verifySearchItem(item){
+        await expect(TargetHomePageSelectors.searchedForText).toHaveText(expect.stringContaining(`${item}`))
     }
     async verifyFirstTrendingSearchItem(item){
-        expect(await TargetHomePageSelectors.searchedForText).toHaveText(item)
+        await expect(TargetHomePageSelectors.searchedForText).toHaveText(expect.stringContaining(`${item}`))
     }
-
+    
 }
 
 export default new TargetHomePageValidators();
