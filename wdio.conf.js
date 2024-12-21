@@ -36,7 +36,7 @@ export const config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './test/specs/alibaba/*.js'
+        './test/specs/target/*.js'
         // ToDo: define location for spec files here
     ],
     // Patterns to exclude.
@@ -115,7 +115,7 @@ export const config = {
 
     //Base URL for original test suite
     // baseUrl: 'https://practice.sdetunicorns.com',
-    baseUrl: 'https://www.alibaba.com/',
+    baseUrl: 'https://www.target.com/',
      //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
