@@ -1,4 +1,4 @@
-import homePage from "../pages/home-page"
+import homePage from "../../pages/sdetUnicorns/home-page"
 import allureReporter from '@wdio/allure-reporter'
 
 describe('Navigation Menu', () => {

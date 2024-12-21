@@ -36,7 +36,7 @@ export const config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './test/specs/*.js'
+        './test/specs/alibaba/*.js'
         // ToDo: define location for spec files here
     ],
     // Patterns to exclude.
@@ -112,8 +112,11 @@ export const config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-     baseUrl: 'https://practice.sdetunicorns.com',
-    //
+
+    //Base URL for original test suite
+    // baseUrl: 'https://practice.sdetunicorns.com',
+    baseUrl: 'https://www.alibaba.com/',
+     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
     //
@@ -231,7 +234,7 @@ export const config = {
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
      beforeTest: async function () {
-        await browser.setWindowSize(1000, 700)
+        await browser.setWindowSize(1000, 1000)
      },
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling

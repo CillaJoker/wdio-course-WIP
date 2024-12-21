@@ -1,5 +1,5 @@
-import blogPage from "../pages/blog-page"
-import blogPageValidators from "../validators/blogPageValidators"
+import blogPage from "../../pages/sdetUnicorns/blog-page"
+import blogPageValidators from "../../validators/blogPageValidators"
 import allureReporter from '@wdio/allure-reporter'
 
 describe('Recent Blog Posts', () => {

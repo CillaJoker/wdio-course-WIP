@@ -1,7 +1,7 @@
-import aboutPage from "../pages/about-page"
-import homePage from "../pages/home-page"
-import homePageSelectors from "../selectors/homePageSelectors"
-import homePageValidators from "../validators/homePageValidators"
+import aboutPage from "../../pages/sdetUnicorns/about-page"
+import homePage from "../../pages/sdetUnicorns/home-page"
+import homePageSelectors from "../../selectors/sdetUnicorns/homePageSelectors"
+import homePageValidators from "../../validators/homePageValidators"
 import allureReporter from '@wdio/allure-reporter'
 
 describe('Home', () => {

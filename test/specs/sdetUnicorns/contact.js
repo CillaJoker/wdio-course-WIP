@@ -1,6 +1,6 @@
-import contactPage from "../pages/contact-page"
-import contactPageSelectors from "../selectors/contactPageSelectors"
-import contactPageValidators from "../validators/contactPageValidators"
+import contactPage from "../../pages/sdetUnicorns/contact-page"
+import contactPageSelectors from "../../selectors/sdetUnicorns/contactPageSelectors"
+import contactPageValidators from "../../validators/contactPageValidators"
 import { faker } from '@faker-js/faker';
 import allureReporter from '@wdio/allure-reporter'
 
