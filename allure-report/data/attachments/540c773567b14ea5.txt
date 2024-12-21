@@ -1,3 +1,0 @@
-{
-  "text": "/var/folders/q8/6n_z7g256h7f7t6x52r5c4nr0000gn/T/.org.chromium.Chromium.xNJR3f/uploadEaWYSj/TestUpload.png"
-}
