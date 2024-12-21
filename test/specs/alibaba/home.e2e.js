@@ -2,8 +2,8 @@ import AlibabaHomePage from '../../pages/alibaba/home-page'
 import AlibabaHomePageValidators from '../../validators/alibaba/alibabaHomePageValidators';
 import { faker } from '@faker-js/faker';
 
-describe('Amazon Home Page', () => {
-    
+describe('Alibaba Home Page', () => {
+
     it('Access url, verify url and title', async () => {
         await AlibabaHomePage.openHomePage();
         await AlibabaHomePageValidators.verifyURL();
@@ -14,6 +14,5 @@ describe('Amazon Home Page', () => {
         await AlibabaHomePage.openHomePage();
         await AlibabaHomePage.searchForRandomItem()
         await AlibabaHomePageValidators.verifySearchItem();
-
     })
 })
