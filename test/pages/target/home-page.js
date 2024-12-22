@@ -1,5 +1,4 @@
 import TargetHomePageSelectors from "../../selectors/target/targetHomePageSelectors";
-import { faker } from '@faker-js/faker';
 import TargetHomePageValidators from "../../validators/target/targetHomePageValidators";
 class TargetHomePage{
     async openHomePage(){

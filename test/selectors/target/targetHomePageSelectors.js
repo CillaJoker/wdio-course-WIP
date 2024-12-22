@@ -18,7 +18,7 @@ class TargetHomePageSelectors{
         return $('.h-margin-r-x3')
     }
     get createAccountBTN(){
-        return $ ('.sc-ddc722c0-0.sc-3d5333d1-0.flfJAZ.jaKlHa.h-whiteSpace-normal.h-margin-b-tight')
+        return $('.sc-ddc722c0-0.sc-3d5333d1-0.flfJAZ.jaKlHa.h-whiteSpace-normal.h-margin-b-tight')
     }
     }
     
