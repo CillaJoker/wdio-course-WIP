@@ -1,3 +1,4 @@
+import targetHomePageSelectors from "../../selectors/target/targetHomePageSelectors";
 import TargetHomePageSelectors from "../../selectors/target/targetHomePageSelectors";
 import TargetHomePageValidators from "../../validators/target/targetHomePageValidators";
 class TargetHomePage{
@@ -6,9 +7,9 @@ class TargetHomePage{
     }
     
 
-    async searchForRandomItem(randomItem){
+    async searchForItem(item){
         await TargetHomePageSelectors.searchBar.waitForDisplayed;
-        await TargetHomePageSelectors.searchBar.setValue(randomItem);
+        await TargetHomePageSelectors.searchBar.setValue(item);
         await TargetHomePageSelectors.searchButton.click();
         await TargetHomePageSelectors.searchedForText.waitForDisplayed();
     }
@@ -27,6 +28,29 @@ class TargetHomePage{
         await TargetHomePageSelectors.signInBTN.click();
         await TargetHomePageSelectors.createAccountBTN.waitForDisplayed();
         await TargetHomePageSelectors.createAccountBTN.click();
+    }
+    async OpenFirstItemAndAddToCart(){
+        const firstSearchResult = TargetHomePageSelectors.listOfSearchResults[0]
+        await firstSearchResult.scrollIntoView()
+        await firstSearchResult.click()
+        await TargetHomePageSelectors.itemPageObj.waitForDisplayed()
+        const itemNumber = await TargetHomePageSelectors.itemPageObj.getAttribute('childorstandalonetcin')
+        const addToCartBTN = await TargetHomePageSelectors.addToCartButtonSelector(itemNumber)
+        await addToCartBTN.waitForDisplayed()
+        await addToCartBTN.click()
+    }
+    async viewCartAfterAddingToCheckout(){
+        const viewCartBtn = await TargetHomePageSelectors.checkOutButtons[1]
+        await viewCartBtn.waitForDisplayed()
+        await viewCartBtn.click()
+    }
+    async clickViewCartIcon(){
+        await TargetHomePageSelectors.viewCartBTN.waitForDisplayed()
+        await TargetHomePageSelectors.viewCartBTN.click()
+    }
+    async updateCartQuant(){
+        await TargetHomePageSelectors.changeQuantity.waitForDisplayed()
+        await TargetHomePageSelectors.changeQuantity.selectByIndex(3)
     }
 }
 

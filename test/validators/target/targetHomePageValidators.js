@@ -13,7 +13,14 @@ class TargetHomePageValidators{
     async verifyFirstTrendingSearchItem(item){
         await expect(TargetHomePageSelectors.searchedForText).toHaveText(expect.stringContaining(`${item}`))
     }
-    
+    async verifyCartSubTotal(itemCost){
+        const subtotalText = await TargetHomePageSelectors.cartSubTotal
+        await expect(subtotalText).toHaveText(expect.stringContaining(itemCost))
+    }
+    async verifyCartSubTotalChanged(initialSubTotal){
+        const subtotalText = await TargetHomePageSelectors.cartSubTotal
+        await expect(subtotalText).not.toHaveText(expect.stringContaining(initialSubTotal))
+    }
 }
 
 export default new TargetHomePageValidators();
