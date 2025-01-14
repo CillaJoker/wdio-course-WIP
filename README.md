@@ -1,8 +1,4 @@
-Sure! Here's a descriptive README that you can use for your repository. Feel free to adjust any details based on your preferences:
-
----
-
-# WebDriverIO Course - WIP (Work in Progress)
+# WebDriverIO Course
 
 Welcome to my WebDriverIO (WDIO) course project! This repository is a learning sandbox where I applied the concepts and techniques I learned while working through a WebDriverIO course. The project is still a work in progress and serves as a practical example of how to set up and run automated end-to-end tests for web applications using WebDriverIO.
 
